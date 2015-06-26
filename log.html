@@ -9,6 +9,8 @@
 <head>
 	<title>Score Report</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="trial.js"> </script>
+
 </head>
 <style>
 #score_report {
@@ -72,10 +74,19 @@
       </nav>
 
 <div id="writeArea">
+<form name= "recorder" class="form-signin">
+        <h2 class="form-signin-heading">Sign in to view your Scores</h2>
+        <input name="KUID" class="form-control" placeholder="KUID Number" autofocus="" onClick="cleanDiv()" onkeypress="if (event.keyCode==13){ validate();}else{cleanDiv();}">
+        <input type="password" name="Lastname" class="form-control" placeholder="Last name" onClick="cleanDiv()" onkeypress="if (event.keyCode==13){ validate();}else{cleanDiv();}">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+      </form>
+	  <center>	<button class="btn btn-lg btn-primary" onClick="validate()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></center>
 
-
-
-<center><img src="working.png"><br/><h1>Apologies! The page will be available again very soon!</h1></center>
+<!-- <center><img src="working.png"><br/><h1>Scores will be available again very soon!</h1></center> -->
 </div>
 <div id="error_log"></div>
       
